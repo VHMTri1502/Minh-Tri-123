@@ -1,0 +1,33 @@
+{
+  "artifacts": [
+    {
+      "bytes": 92400,
+      "path": "raw/a_dev.jsonl",
+      "sha256": "289ec05d947a7f14463ee3508d57c57354f7c770580eb0b6cfebb31c051d10fa"
+    },
+    {
+      "bytes": 95218,
+      "path": "raw/a_test.jsonl",
+      "sha256": "211d7e686ab3d7eb16a67a5e1d2e899c6fede10f3631b61cf827ad17c520230c"
+    },
+    {
+      "bytes": 433,
+      "path": "raw/pcc_source_provenance.json",
+      "sha256": "a3bfdaa091938b51ad21866d6c4207418a2e70adb006aa9b2c2867942ad59311"
+    },
+    {
+      "bytes": 4669,
+      "path": "raw/bioclaim_source_provenance.json",
+      "sha256": "5ec8116fdd98e2cbd4aca01b5244b20d4722769e13a675772e995311e5873d5d"
+    },
+    {
+      "bytes": 7952,
+      "path": "raw/source_split_manifest.json",
+      "sha256": "661d86dcad76b5ba617a1d2b57c5a3d93843ef3e5123bf23b69a168ca7d516c0"
+    }
+  ],
+  "files_verified": 5,
+  "manifest_sha256": "066a7905db66023fcd525aafecd91c552b0db955ad183661edcaec90888b92e1",
+  "method": "byte-count and SHA-256 verification; JSONL labels were not parsed",
+  "passed": true
+}

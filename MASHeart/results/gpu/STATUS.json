@@ -1,0 +1,12 @@
+{
+  "project": "MASHeart",
+  "execution_status": "not_run",
+  "reason": "The packaging and validation host has PyTorch CPU and no CUDA device.",
+  "available_pipeline": "Qwen3-4B-Instruct-2507 NF4 QLoRA training, validation selection, and three-stage MAS evaluation",
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "gpu_training_completed": false,
+  "gpu_inference_completed": false,
+  "performance_metrics": null,
+  "test_scope": "CPU-testable parser, evidence gate, assistant-only loss masking, frozen protocol, and checkpoint logic; no GPU benchmark is claimed."
+}

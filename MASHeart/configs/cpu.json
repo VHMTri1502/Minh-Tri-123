@@ -1,0 +1,7 @@
+{
+  "seed": 17,
+  "validation_fraction": 0.25,
+  "C": 1.0,
+  "max_iter": 2000,
+  "bootstrap_rounds": 500
+}

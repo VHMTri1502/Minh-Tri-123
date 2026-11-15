@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MASHeart"
+version = "1.0.0"
+description = "A reproducible research and teaching project for cardiovascular text stance with multi-agent review"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = ["numpy>=1.26,<3", "pandas>=2.1,<3", "scipy>=1.11,<2", "scikit-learn>=1.4,<2", "matplotlib>=3.8,<4", "joblib>=1.3,<2"]
+
+[project.scripts]
+masheart = "masheart.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["masheart*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+pythonpath = ["."]

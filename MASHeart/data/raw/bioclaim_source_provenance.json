@@ -1,0 +1,81 @@
+{
+  "repository": "https://github.com/youngwoo-umass/cond-nli",
+  "revision": "14e88c344c148c46bb6dbaab2149b252b5e030d3",
+  "retrieved_utc": "2026-10-05T05:36:57.412836+00:00",
+  "paper": "https://aclanthology.org/2023.findings-emnlp.456/",
+  "license": "BioClaim README: CC BY-NC-SA 4.0 International; paper Appendix B.1 says follows PCC CC BY-NC-SA 2.0 UK England & Wales. Preserve both statements; code has no standalone LICENSE.",
+  "files": [
+    {
+      "path": "README.md",
+      "upstream_path": "BioClaim/README.md",
+      "url": "https://raw.githubusercontent.com/youngwoo-umass/cond-nli/14e88c344c148c46bb6dbaab2149b252b5e030d3/BioClaim/README.md",
+      "bytes": 5710,
+      "sha256": "0e361edc6f1a851dc1f32b3fe75b9133b605699ed0ee678f9ebbec0a0076ca19"
+    },
+    {
+      "path": "val.csv",
+      "upstream_path": "BioClaim/val.csv",
+      "url": "https://raw.githubusercontent.com/youngwoo-umass/cond-nli/14e88c344c148c46bb6dbaab2149b252b5e030d3/BioClaim/val.csv",
+      "bytes": 73873,
+      "sha256": "945fff10e150563368e09dfb1400465f472fa0395b463ecdebf757090ded4566"
+    },
+    {
+      "path": "test.csv",
+      "upstream_path": "BioClaim/test.csv",
+      "url": "https://raw.githubusercontent.com/youngwoo-umass/cond-nli/14e88c344c148c46bb6dbaab2149b252b5e030d3/BioClaim/test.csv",
+      "bytes": 89785,
+      "sha256": "1d724684d5768c4fe6f0e3b7fea06b351407af79bcd67ba1f1d08469b2e29525"
+    },
+    {
+      "path": "code__src__contradiction__medical_claims__token_tagging__problem_loader.py",
+      "upstream_path": "code/src/contradiction/medical_claims/token_tagging/problem_loader.py",
+      "url": "https://raw.githubusercontent.com/youngwoo-umass/cond-nli/14e88c344c148c46bb6dbaab2149b252b5e030d3/code/src/contradiction/medical_claims/token_tagging/problem_loader.py",
+      "bytes": 2344,
+      "sha256": "8b6936301ea42b24e7b0385eff72676121b72402fd8be24fde9058a4b0f1a19b"
+    },
+    {
+      "path": "code__src__contradiction__medical_claims__token_tagging__accuracy_eval.py",
+      "upstream_path": "code/src/contradiction/medical_claims/token_tagging/accuracy_eval.py",
+      "url": "https://raw.githubusercontent.com/youngwoo-umass/cond-nli/14e88c344c148c46bb6dbaab2149b252b5e030d3/code/src/contradiction/medical_claims/token_tagging/accuracy_eval.py",
+      "bytes": 4579,
+      "sha256": "35df84b0a0fe9793ed9b6b33e04d611d7907a0e07eb871cec90e5ddd377c887b"
+    },
+    {
+      "path": "code__src__contradiction__medical_claims__token_tagging__prec_recall.py",
+      "upstream_path": "code/src/contradiction/medical_claims/token_tagging/prec_recall.py",
+      "url": "https://raw.githubusercontent.com/youngwoo-umass/cond-nli/14e88c344c148c46bb6dbaab2149b252b5e030d3/code/src/contradiction/medical_claims/token_tagging/prec_recall.py",
+      "bytes": 901,
+      "sha256": "63d94da42e18f94d7050d4739dc98242900782f19c4ea8638ad9d33d1d8db009"
+    },
+    {
+      "path": "code__src__contradiction__medical_claims__token_tagging__binary_eval.py",
+      "upstream_path": "code/src/contradiction/medical_claims/token_tagging/binary_eval.py",
+      "url": "https://raw.githubusercontent.com/youngwoo-umass/cond-nli/14e88c344c148c46bb6dbaab2149b252b5e030d3/code/src/contradiction/medical_claims/token_tagging/binary_eval.py",
+      "bytes": 452,
+      "sha256": "2671c7d9e5698475749cebe19492adcec0e2765100a587f8d6b437b3e3515416"
+    },
+    {
+      "path": "code__README.md",
+      "upstream_path": "code/README.md",
+      "url": "https://raw.githubusercontent.com/youngwoo-umass/cond-nli/14e88c344c148c46bb6dbaab2149b252b5e030d3/code/README.md",
+      "bytes": 464,
+      "sha256": "da27c6ac89025ef67cf59f5cca1c8fbd36d4e85c30a2dbefec05f9a6dace5012"
+    },
+    {
+      "path": "code__requirements.txt",
+      "upstream_path": "code/requirements.txt",
+      "url": "https://raw.githubusercontent.com/youngwoo-umass/cond-nli/14e88c344c148c46bb6dbaab2149b252b5e030d3/code/requirements.txt",
+      "bytes": 587,
+      "sha256": "c7eed1e84c7b97049c31774b47667bf355e69db9fe33ec9ebc684020defbbe09"
+    },
+    {
+      "path": "code__4_cond_eval.sh",
+      "upstream_path": "code/4_cond_eval.sh",
+      "url": "https://raw.githubusercontent.com/youngwoo-umass/cond-nli/14e88c344c148c46bb6dbaab2149b252b5e030d3/code/4_cond_eval.sh",
+      "bytes": 114,
+      "sha256": "f38d89fdfc7cd2ec401b095a0cf80c8faa6c5fd56f0861873a3446ab62656ef9"
+    }
+  ],
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "license_discrepancy": "Released README explicitly names version 4.0; appendix describes source PCC version 2.0 UK. Do not treat article license as dataset license."
+}

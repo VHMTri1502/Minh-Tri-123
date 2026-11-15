@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: >-
+  Cite this software by its title and recorded release or commit. The collective
+  author entry is a descriptive project credit, not a verified institutional
+  affiliation. Maintainers should replace it with verified contributor metadata
+  before an archival release. Also cite the original PCC and BioClaim papers
+  below when using the supplied data or inherited split. Software citation does
+  not replace data attribution or transfer their licenses.
+title: "MASHeart: Reproducible Biomedical Stance Classification and Source-Checked Multi-Agent Review"
+type: software
+version: 1.0.0
+authors:
+  - name: MASHeart contributors
+abstract: >-
+  A standalone educational research workflow for question-conditioned biomedical
+  stance classification. It includes source-group data audits, a combined
+  word/character TF-IDF Logistic Regression baseline, a T4 QLoRA experiment,
+  Analyst-Reviewer-Verifier inference, structural source quotation checks,
+  failure-aware evaluation, and an English step-by-step Colab notebook.
+keywords:
+  - biomedical natural language processing
+  - stance classification
+  - multi-agent systems
+  - QLoRA
+  - reproducible research
+references:
+  - type: article
+    title: "A corpus of potentially contradictory research claims from cardiovascular research abstracts"
+    authors:
+      - family-names: Alamri
+        given-names: Abdulaziz
+      - family-names: Stevenson
+        given-names: Mark
+    year: 2016
+    journal: Journal of Biomedical Semantics
+    volume: "7"
+    doi: 10.1186/s13326-016-0083-z
+    url: https://doi.org/10.1186/s13326-016-0083-z
+  - type: conference-paper
+    title: Conditional Natural Language Inference
+    authors:
+      - family-names: Kim
+        given-names: Youngwoo
+      - family-names: Rahimi
+        given-names: Razieh
+      - family-names: Allan
+        given-names: James
+    year: 2023
+    collection-title: "Findings of the Association for Computational Linguistics: EMNLP 2023"
+    doi: 10.18653/v1/2023.findings-emnlp.456
+    url: https://aclanthology.org/2023.findings-emnlp.456/

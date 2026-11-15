@@ -1,0 +1,327 @@
+{
+  "protocol": "linked-bioclaim-release-v1",
+  "source_corpus_sha256": "c6925524b0117e877e64782af048d18a851bf0127361abe29587858238a180f4",
+  "bioclaim_revision": "14e88c344c148c46bb6dbaab2149b252b5e030d3",
+  "bioclaim_files": {
+    "val.csv": "945fff10e150563368e09dfb1400465f472fa0395b463ecdebf757090ded4566",
+    "test.csv": "1d724684d5768c4fe6f0e3b7fea06b351407af79bcd67ba1f1d08469b2e29525"
+  },
+  "split_authority": "Official CSV as distributed: val.csv->dev; test.csv->test. Never swap to match paper appendix counts.",
+  "near_question_rule": {
+    "algorithm": "difflib.SequenceMatcher casefold+whitespace, character sequence",
+    "threshold": 0.8,
+    "rationale": "Conservative topic clustering, fixed without seeing predictions; lexical similarity does not establish clinical equivalence."
+  },
+  "components": [
+    {
+      "group_id": "qg-21521728",
+      "review_ids": [
+        "21521728",
+        "23219304"
+      ],
+      "split": "test"
+    },
+    {
+      "group_id": "qg-21556773",
+      "review_ids": [
+        "21556773"
+      ],
+      "split": "test"
+    },
+    {
+      "group_id": "qg-22086840",
+      "review_ids": [
+        "22086840",
+        "23223091"
+      ],
+      "split": "dev"
+    },
+    {
+      "group_id": "qg-22498326",
+      "review_ids": [
+        "22498326"
+      ],
+      "split": "test"
+    },
+    {
+      "group_id": "qg-22795718",
+      "review_ids": [
+        "22795718"
+      ],
+      "split": "dev"
+    },
+    {
+      "group_id": "qg-22854636",
+      "review_ids": [
+        "22854636"
+      ],
+      "split": "dev"
+    },
+    {
+      "group_id": "qg-23181122",
+      "review_ids": [
+        "23181122",
+        "23489806"
+      ],
+      "split": "test"
+    },
+    {
+      "group_id": "qg-23435582",
+      "review_ids": [
+        "23435582"
+      ],
+      "split": "dev"
+    },
+    {
+      "group_id": "qg-23602289",
+      "review_ids": [
+        "23602289"
+      ],
+      "split": "dev"
+    },
+    {
+      "group_id": "qg-23623290",
+      "review_ids": [
+        "23623290"
+      ],
+      "split": "test"
+    },
+    {
+      "group_id": "qg-23962886",
+      "review_ids": [
+        "23962886"
+      ],
+      "split": "test"
+    },
+    {
+      "group_id": "qg-24035160",
+      "review_ids": [
+        "24035160"
+      ],
+      "split": "dev"
+    },
+    {
+      "group_id": "qg-24036021",
+      "review_ids": [
+        "24036021"
+      ],
+      "split": "dev"
+    },
+    {
+      "group_id": "qg-24039708",
+      "review_ids": [
+        "24039708"
+      ],
+      "split": "test"
+    },
+    {
+      "group_id": "qg-24040766",
+      "review_ids": [
+        "24040766"
+      ],
+      "split": "dev"
+    },
+    {
+      "group_id": "qg-24090581",
+      "review_ids": [
+        "24090581"
+      ],
+      "split": "test"
+    },
+    {
+      "group_id": "qg-24135644",
+      "review_ids": [
+        "24135644"
+      ],
+      "split": "dev"
+    },
+    {
+      "group_id": "qg-24163234",
+      "review_ids": [
+        "24163234"
+      ],
+      "split": "test"
+    },
+    {
+      "group_id": "qg-24165432",
+      "review_ids": [
+        "24165432"
+      ],
+      "split": "test"
+    },
+    {
+      "group_id": "qg-24172075",
+      "review_ids": [
+        "24172075"
+      ],
+      "split": "dev"
+    },
+    {
+      "group_id": "qg-24212980",
+      "review_ids": [
+        "24212980"
+      ],
+      "split": "dev"
+    }
+  ],
+  "conflicts": [],
+  "label_mapping": {
+    "O": "neither annotated category",
+    "A": "contradiction/opposite outcome",
+    "C": "neutral/different condition",
+    "AC": "both original binary labels are positive"
+  },
+  "annotation_policy": "Retain two independent source binary gold labels; AC preserves overlap. O does not assert medical entailment.",
+  "fit_policy": "a_train contains only components outside frozen BioClaim dev/test; if empty, supervised baseline may fit a_dev with fixed hyperparameters, clearly labelled dev-fit. No tuning on test.",
+  "b_train_policy": "No invented annotations. Distributed BioClaim has only dev/test.",
+  "splits": {
+    "a": {
+      "train": {
+        "n": 0,
+        "groups": [],
+        "group_count": 0,
+        "labels": {},
+        "claim_types": {}
+      },
+      "dev": {
+        "n": 125,
+        "groups": [
+          "qg-22086840",
+          "qg-22795718",
+          "qg-22854636",
+          "qg-23435582",
+          "qg-23602289",
+          "qg-24035160",
+          "qg-24036021",
+          "qg-24040766",
+          "qg-24135644",
+          "qg-24172075",
+          "qg-24212980"
+        ],
+        "group_count": 11,
+        "labels": {
+          "YS": 84,
+          "NO": 41
+        },
+        "claim_types": {
+          "CAUS": 80,
+          "EVAL": 45
+        }
+      },
+      "test": {
+        "n": 134,
+        "groups": [
+          "qg-21521728",
+          "qg-21556773",
+          "qg-22498326",
+          "qg-23181122",
+          "qg-23623290",
+          "qg-23962886",
+          "qg-24039708",
+          "qg-24090581",
+          "qg-24163234",
+          "qg-24165432"
+        ],
+        "group_count": 10,
+        "labels": {
+          "YS": 96,
+          "NO": 38
+        },
+        "claim_types": {
+          "CAUS": 85,
+          "EVAL": 49
+        }
+      },
+      "quarantine": {
+        "n": 0,
+        "groups": [],
+        "group_count": 0,
+        "labels": {},
+        "claim_types": {}
+      }
+    },
+    "b": {
+      "train": {
+        "n": 0,
+        "groups": [],
+        "group_count": 0,
+        "official_topic_count": 0,
+        "tokens": 0,
+        "contradiction_tokens": 0,
+        "neutral_tokens": 0,
+        "sides_without_contradiction": 0,
+        "sides_without_neutral": 0,
+        "unique_claim_texts": 0
+      },
+      "dev": {
+        "n": 129,
+        "groups": [
+          "qg-22086840",
+          "qg-22795718",
+          "qg-22854636",
+          "qg-23435582",
+          "qg-23602289",
+          "qg-24035160",
+          "qg-24036021",
+          "qg-24040766",
+          "qg-24135644",
+          "qg-24172075",
+          "qg-24212980"
+        ],
+        "group_count": 11,
+        "official_topic_count": 11,
+        "tokens": 6679,
+        "contradiction_tokens": 944,
+        "neutral_tokens": 2338,
+        "sides_without_contradiction": 49,
+        "sides_without_neutral": 10,
+        "unique_claim_texts": 103
+      },
+      "test": {
+        "n": 156,
+        "groups": [
+          "qg-21521728",
+          "qg-21556773",
+          "qg-22498326",
+          "qg-23181122",
+          "qg-23623290",
+          "qg-23962886",
+          "qg-24039708",
+          "qg-24090581",
+          "qg-24163234",
+          "qg-24165432"
+        ],
+        "group_count": 10,
+        "official_topic_count": 12,
+        "tokens": 8236,
+        "contradiction_tokens": 911,
+        "neutral_tokens": 3797,
+        "sides_without_contradiction": 67,
+        "sides_without_neutral": 1,
+        "unique_claim_texts": 110
+      },
+      "quarantine": {
+        "n": 0,
+        "groups": [],
+        "group_count": 0,
+        "official_topic_count": 0,
+        "tokens": 0,
+        "contradiction_tokens": 0,
+        "neutral_tokens": 0,
+        "sides_without_contradiction": 0,
+        "sides_without_neutral": 0,
+        "unique_claim_texts": 0
+      }
+    }
+  },
+  "output_sha256": {
+    "a_train.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "a_dev.jsonl": "289ec05d947a7f14463ee3508d57c57354f7c770580eb0b6cfebb31c051d10fa",
+    "a_test.jsonl": "211d7e686ab3d7eb16a67a5e1d2e899c6fede10f3631b61cf827ad17c520230c",
+    "a_quarantine.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "b_train.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "b_dev.jsonl": "d0651a20c7fe13ff031b06fccf7194f1f851f777de288fd9e6c8cd942cb66dad",
+    "b_test.jsonl": "6dc58df610b680978b98c0f1fa71e8d26f7c0afe3dcea3fe4bb053af2f4e703e",
+    "b_quarantine.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

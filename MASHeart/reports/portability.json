@@ -1,0 +1,92 @@
+{
+  "project": "MASHeart",
+  "status": "passed",
+  "archive_crc_passed": true,
+  "inventory_files_verified": 93,
+  "isolated_extraction": true,
+  "parent_pythonpath_removed": true,
+  "commands": [
+    {
+      "command": [
+        "-m",
+        "masheart",
+        "audit"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.066000399994664
+    },
+    {
+      "command": [
+        "-m",
+        "masheart",
+        "setup-data",
+        "--output",
+        ".verification/data_setup"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.086297099944204
+    },
+    {
+      "command": [
+        "-m",
+        "masheart",
+        "run",
+        "--mode",
+        "cpu",
+        "--output",
+        ".verification/cpu_repeat"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.6616976000368595
+    },
+    {
+      "command": [
+        "-m",
+        "masheart",
+        "visualize",
+        "--run-dir",
+        ".verification/cpu_repeat"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.291537299985066
+    },
+    {
+      "command": [
+        "-m",
+        "masheart",
+        "predict",
+        "--model",
+        "results/cpu_reference/models/tfidf_logreg.joblib",
+        "--question",
+        "Does treatment X reduce outcome Y?",
+        "--statement",
+        "The synthetic trial found no reduction."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.055461399955675
+    },
+    {
+      "command": [
+        "scripts/verify_project.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.8362092999741435
+    }
+  ],
+  "cpu_repeat_rows": 134,
+  "predictions_match_reference": true,
+  "visualization_preserves_completed_artifact_hashes": true,
+  "code_sha256": {
+    "__init__.py": "1f26213d7e7052f4348ea6ced9541d13e369bba03c7d8a99bb08924de3868f70",
+    "__main__.py": "a657f1e95cee82e003f657d739544ac112b3dd8618801a648c20bf1c3ab43e90",
+    "baseline.py": "97c8f27a60bb131638ca8ab34aa7b3f82f7fc277b185c72544e5e9c08e9e4b98",
+    "cli.py": "b7c1474fe6f0c6b852b0a5221c1da334c22f93fdbae85713a7a4b33469ae9b6a",
+    "data.py": "561d01b6b95d49784b7bbea55b0bb11915db6f3101de3ddd9390c57be2569e9a",
+    "experiment.py": "9fe31066b2dacd9f90c407123755297b7c24b22dbe31e10327d71a773b3aca7b",
+    "gpu.py": "1c54524f2f9178d9de9712d90bd856383d91e5fb48b6ba30b4153d423a1e1ab4",
+    "metrics.py": "5bed4b4a20fed40966ebbd9be2d4157d9e5d656fbb873f04e825656406730e86",
+    "visualization.py": "7e61c66d3667109dde29964dd9605470fcfa8c1035d9eef8dee049ce5f308623"
+  },
+  "scope": "New extraction path, existing validated Python environment, CPU workflow and CLI only.",
+  "gpu_execution": "not_run"
+}

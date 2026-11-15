@@ -1,0 +1,13 @@
+{
+  "execution": "CPU only; no model downloads or API calls",
+  "packages": {
+    "joblib": "1.4.2",
+    "matplotlib": "3.9.2",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.5.2",
+    "scipy": "1.14.1"
+  },
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.12.3"
+}

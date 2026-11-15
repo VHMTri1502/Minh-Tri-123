@@ -1,0 +1,9 @@
+system,gold,prediction,count
+majority,NO,NO,0
+majority,NO,YS,38
+majority,YS,NO,0
+majority,YS,YS,96
+tfidf_logreg,NO,NO,7
+tfidf_logreg,NO,YS,31
+tfidf_logreg,YS,NO,4
+tfidf_logreg,YS,YS,92

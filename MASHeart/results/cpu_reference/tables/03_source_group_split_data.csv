@@ -1,0 +1,4 @@
+split,n,groups,NO,YS
+train,95,8,32,63
+validation,30,3,9,21
+test,134,10,38,96

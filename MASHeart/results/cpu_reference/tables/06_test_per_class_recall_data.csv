@@ -1,0 +1,5 @@
+system,label,recall,support
+majority,NO,0.0,38
+majority,YS,1.0,96
+tfidf_logreg,NO,0.18421052631578946,38
+tfidf_logreg,YS,0.9583333333333334,96

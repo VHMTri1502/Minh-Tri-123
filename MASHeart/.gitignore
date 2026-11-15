@@ -1,0 +1,9 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.verification/
+.ipynb_checkpoints/
+runs/
+*.egg-info/
+# Retain the small measured CPU reference model; do not bundle downloaded base LLMs.
+.cache/

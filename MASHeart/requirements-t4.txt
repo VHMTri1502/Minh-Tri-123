@@ -1,0 +1,8 @@
+# Include the CPU stack. Keep the CUDA-enabled PyTorch supplied by Colab.
+# A new kernel is required if different versions were already imported.
+# Model APIs: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+-r requirements.txt
+transformers==4.57.1
+peft==0.17.1
+accelerate==1.10.1
+bitsandbytes==0.48.1

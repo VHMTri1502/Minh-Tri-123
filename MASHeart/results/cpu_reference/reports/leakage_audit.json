@@ -1,0 +1,29 @@
+{
+  "train_test": {
+    "overlap_counts": {
+      "group_id": 0,
+      "id": 0,
+      "normalized_text": 0,
+      "pmid": 0
+    },
+    "passed": true
+  },
+  "train_validation": {
+    "overlap_counts": {
+      "group_id": 0,
+      "id": 0,
+      "normalized_text": 0,
+      "pmid": 0
+    },
+    "passed": true
+  },
+  "validation_test": {
+    "overlap_counts": {
+      "group_id": 0,
+      "id": 0,
+      "normalized_text": 0,
+      "pmid": 0
+    },
+    "passed": true
+  }
+}

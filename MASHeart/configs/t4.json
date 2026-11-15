@@ -1,0 +1,18 @@
+{
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "seed": 17,
+  "validation_fraction": 0.25,
+  "max_train_tokens": 512,
+  "max_input_tokens": 1536,
+  "max_new_tokens": 192,
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "target_modules": ["q_proj", "v_proj"],
+  "learning_rate": 0.0001,
+  "epochs": 3,
+  "batch_size": 1,
+  "gradient_accumulation_steps": 8,
+  "minimum_vram_gib": 12.0
+}

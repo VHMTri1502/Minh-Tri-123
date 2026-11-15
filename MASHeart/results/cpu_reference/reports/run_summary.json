@@ -1,0 +1,145 @@
+{
+  "bootstrap": {
+    "ci_lower": 0.0,
+    "ci_upper": 0.2416057707568053,
+    "confidence_level": 0.95,
+    "difference_direction": "system_b_minus_system_a",
+    "group_count": 10,
+    "method": "paired source-group percentile bootstrap",
+    "metric": "macro_f1",
+    "n": 134,
+    "point_difference": 0.14555716271022995,
+    "rounds": 500,
+    "seed": 17,
+    "system_a": "majority",
+    "system_b": "tfidf_logreg"
+  },
+  "config": {
+    "C": 1.0,
+    "bootstrap_rounds": 500,
+    "max_iter": 2000,
+    "seed": 17,
+    "validation_fraction": 0.25
+  },
+  "figures": {
+    "figure_count": 8,
+    "formats": [
+      "png",
+      "svg"
+    ],
+    "manifest_path": "C:\\Users\\huynh\\OneDrive\\Máy tính\\ThsHUIT\\HeartMAS\\MASHeart\\results\\cpu_reference\\figures\\figure_data_manifest.json",
+    "manifest_sha256": "d7feb10bc5a7ff22da8a85f220a11254a0ec80b22de68ba025232c77ec6c24b8"
+  },
+  "frozen_protocol_sha256": "f51a607e50f1acde3efcc17e7686ce7850811e504b518fc9826f4ff50611b5f8",
+  "generated_utc": "2026-11-15T05:18:53.146461+00:00",
+  "gpu_executed": false,
+  "leakage_audit_passed": true,
+  "model_roundtrip_verified": true,
+  "paths": {
+    "complete_manifest": "reports/complete_manifest.json",
+    "figures": "figures",
+    "frozen_protocol": "reports/frozen_protocol.json",
+    "models": "models",
+    "report": "reports/CPU_RESEARCH_REPORT.md",
+    "reports": "reports",
+    "tables": "tables"
+  },
+  "protocol": "educational-development-fit-group-split",
+  "run_dir": "C:\\Users\\huynh\\OneDrive\\Máy tính\\ThsHUIT\\HeartMAS\\MASHeart\\results\\cpu_reference",
+  "source_audit_passed": true,
+  "split_counts": [
+    {
+      "NO": 32,
+      "YS": 63,
+      "groups": 8,
+      "n": 95,
+      "split": "train"
+    },
+    {
+      "NO": 9,
+      "YS": 21,
+      "groups": 3,
+      "n": 30,
+      "split": "validation"
+    },
+    {
+      "NO": 38,
+      "YS": 96,
+      "groups": 10,
+      "n": 134,
+      "split": "test"
+    }
+  ],
+  "status": "complete",
+  "test_loaded_after_freeze": true,
+  "test_metrics": [
+    {
+      "accuracy": 0.7164179104477612,
+      "f1_NO": 0.0,
+      "f1_YS": 0.8347826086956521,
+      "invalid_count": 0,
+      "macro_f1": 0.41739130434782606,
+      "n": 134,
+      "precision_NO": 0.0,
+      "precision_YS": 0.7164179104477612,
+      "recall_NO": 0.0,
+      "recall_YS": 1.0,
+      "support_NO": 38,
+      "support_YS": 96,
+      "system": "majority",
+      "valid_rate": 1.0
+    },
+    {
+      "accuracy": 0.7388059701492538,
+      "f1_NO": 0.2857142857142857,
+      "f1_YS": 0.8401826484018264,
+      "invalid_count": 0,
+      "macro_f1": 0.562948467058056,
+      "n": 134,
+      "precision_NO": 0.6363636363636364,
+      "precision_YS": 0.7479674796747967,
+      "recall_NO": 0.18421052631578946,
+      "recall_YS": 0.9583333333333334,
+      "support_NO": 38,
+      "support_YS": 96,
+      "system": "tfidf_logreg",
+      "valid_rate": 1.0
+    }
+  ],
+  "total_seconds": 7.220022500026971,
+  "training_seconds": 0.15299500001128763,
+  "validation_metrics": [
+    {
+      "accuracy": 0.7,
+      "f1_NO": 0.0,
+      "f1_YS": 0.8235294117647058,
+      "invalid_count": 0,
+      "macro_f1": 0.4117647058823529,
+      "n": 30,
+      "precision_NO": 0.0,
+      "precision_YS": 0.7,
+      "recall_NO": 0.0,
+      "recall_YS": 1.0,
+      "support_NO": 9,
+      "support_YS": 21,
+      "system": "majority",
+      "valid_rate": 1.0
+    },
+    {
+      "accuracy": 0.7333333333333333,
+      "f1_NO": 0.42857142857142855,
+      "f1_YS": 0.8260869565217391,
+      "invalid_count": 0,
+      "macro_f1": 0.6273291925465838,
+      "n": 30,
+      "precision_NO": 0.6,
+      "precision_YS": 0.76,
+      "recall_NO": 0.3333333333333333,
+      "recall_YS": 0.9047619047619048,
+      "support_NO": 9,
+      "support_YS": 21,
+      "system": "tfidf_logreg",
+      "valid_rate": 1.0
+    }
+  ]
+}

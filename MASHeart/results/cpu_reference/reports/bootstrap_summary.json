@@ -1,0 +1,15 @@
+{
+  "ci_lower": 0.0,
+  "ci_upper": 0.2416057707568053,
+  "confidence_level": 0.95,
+  "difference_direction": "system_b_minus_system_a",
+  "group_count": 10,
+  "method": "paired source-group percentile bootstrap",
+  "metric": "macro_f1",
+  "n": 134,
+  "point_difference": 0.14555716271022995,
+  "rounds": 500,
+  "seed": 17,
+  "system_a": "majority",
+  "system_b": "tfidf_logreg"
+}

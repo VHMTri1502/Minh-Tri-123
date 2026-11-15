@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "project": "MASHeart",
+  "packaged_date": "2026-11-15",
+  "task": "Task A: stance of a supplied statement toward a supplied research question",
+  "sources": {
+    "PCC": {
+      "creators": [
+        "Abdulaziz Alamri",
+        "Mark Stevenson"
+      ],
+      "publication": "https://doi.org/10.1186/s13326-016-0083-z",
+      "corpus_url": "https://staffwww.dcs.shef.ac.uk/people/M.Stevenson/resources/bio_contradictions/corpus.xml",
+      "source_corpus_sha256": "c6925524b0117e877e64782af048d18a851bf0127361abe29587858238a180f4",
+      "license_statement": "CC BY-NC-SA 2.0 UK"
+    },
+    "BioClaim": {
+      "repository": "https://github.com/youngwoo-umass/cond-nli",
+      "revision": "14e88c344c148c46bb6dbaab2149b252b5e030d3",
+      "publication": "https://aclanthology.org/2023.findings-emnlp.456/",
+      "role": "Released CSVs determine linked dev/test membership. Task-A question/text/stance labels originate in PCC.",
+      "license_statement": "BioClaim README: CC BY-NC-SA 4.0 International; paper Appendix B.1 says follows PCC CC BY-NC-SA 2.0 UK England & Wales. Preserve both statements; code has no standalone LICENSE.",
+      "license_discrepancy": "Released README explicitly names version 4.0; appendix describes source PCC version 2.0 UK. Do not treat article license as dataset license."
+    }
+  },
+  "artifacts": [
+    {
+      "path": "raw/a_dev.jsonl",
+      "bytes": 92400,
+      "sha256": "289ec05d947a7f14463ee3508d57c57354f7c770580eb0b6cfebb31c051d10fa",
+      "copy_policy": "byte-identical preserved source",
+      "official_split": "dev",
+      "rows": 125,
+      "group_count": 11
+    },
+    {
+      "path": "raw/a_test.jsonl",
+      "bytes": 95218,
+      "sha256": "211d7e686ab3d7eb16a67a5e1d2e899c6fede10f3631b61cf827ad17c520230c",
+      "copy_policy": "byte-identical preserved source",
+      "official_split": "test",
+      "rows": 134,
+      "group_count": 10
+    },
+    {
+      "path": "raw/pcc_source_provenance.json",
+      "bytes": 433,
+      "sha256": "a3bfdaa091938b51ad21866d6c4207418a2e70adb006aa9b2c2867942ad59311",
+      "copy_policy": "byte-identical preserved source"
+    },
+    {
+      "path": "raw/bioclaim_source_provenance.json",
+      "bytes": 4669,
+      "sha256": "5ec8116fdd98e2cbd4aca01b5244b20d4722769e13a675772e995311e5873d5d",
+      "copy_policy": "byte-identical preserved source"
+    },
+    {
+      "path": "raw/source_split_manifest.json",
+      "bytes": 7952,
+      "sha256": "661d86dcad76b5ba617a1d2b57c5a3d93843ef3e5123bf23b69a168ca7d516c0",
+      "copy_policy": "byte-identical preserved source"
+    }
+  ],
+  "protocol": {
+    "name": "educational-development-fit-group-split",
+    "independent_official_train": false,
+    "fit_source": "raw/a_dev.jsonl, internal training groups only",
+    "validation_source": "held-out groups inside raw/a_dev.jsonl",
+    "test_source": "raw/a_test.jsonl; parse only after configuration and models are frozen",
+    "default_seed": 17,
+    "default_validation_group_fraction": 0.25,
+    "default_counts": {
+      "train": {
+        "rows": 95,
+        "groups": 8
+      },
+      "validation": {
+        "rows": 30,
+        "groups": 3
+      },
+      "test": {
+        "rows": 134,
+        "groups": 10
+      }
+    },
+    "inference_fields": [
+      "question",
+      "text"
+    ],
+    "forbidden_fit_source": "legacy data/processed files are neither included nor permitted",
+    "history": "HeartMAS used development data during method design and an earlier v1 encountered test. Repackaging does not create a historically unseen benchmark."
+  },
+  "label_semantics": {
+    "YS": "The supplied statement affirms the proposition asked by the question.",
+    "NO": "The supplied statement negates or does not affirm that proposition; this is not a medical falsehood label."
+  },
+  "scope": "Educational text analysis only; not diagnosis, treatment advice, clinical truth verification, or a reproduction of the original Qwen3-8B results."
+}

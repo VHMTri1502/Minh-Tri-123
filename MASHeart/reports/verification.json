@@ -1,0 +1,88 @@
+{
+  "project": "MASHeart",
+  "status": "passed",
+  "validation_host_scope": "CPU",
+  "gpu_execution": "not_run",
+  "checks": {
+    "python_sources_parse": 15,
+    "data_verification": {
+      "passed": true,
+      "manifest_sha256": "066a7905db66023fcd525aafecd91c552b0db955ad183661edcaec90888b92e1",
+      "files_verified": 5,
+      "artifacts": [
+        {
+          "path": "raw/a_dev.jsonl",
+          "sha256": "289ec05d947a7f14463ee3508d57c57354f7c770580eb0b6cfebb31c051d10fa",
+          "bytes": 92400
+        },
+        {
+          "path": "raw/a_test.jsonl",
+          "sha256": "211d7e686ab3d7eb16a67a5e1d2e899c6fede10f3631b61cf827ad17c520230c",
+          "bytes": 95218
+        },
+        {
+          "path": "raw/pcc_source_provenance.json",
+          "sha256": "a3bfdaa091938b51ad21866d6c4207418a2e70adb006aa9b2c2867942ad59311",
+          "bytes": 433
+        },
+        {
+          "path": "raw/bioclaim_source_provenance.json",
+          "sha256": "5ec8116fdd98e2cbd4aca01b5244b20d4722769e13a675772e995311e5873d5d",
+          "bytes": 4669
+        },
+        {
+          "path": "raw/source_split_manifest.json",
+          "sha256": "661d86dcad76b5ba617a1d2b57c5a3d93843ef3e5123bf23b69a168ca7d516c0",
+          "bytes": 7952
+        }
+      ],
+      "method": "byte-count and SHA-256 verification; JSONL labels were not parsed"
+    },
+    "tests": {
+      "run": 35,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "successful": true,
+      "log": "test_changed_data_resume_cannot_overwrite_prior_audit (test_gpu_logic.CheckpointAndFreezeTests.test_changed_data_resume_cannot_overwrite_prior_audit) ... ok\ntest_corrupt_cached_source_hash_is_rejected (test_gpu_logic.CheckpointAndFreezeTests.test_corrupt_cached_source_hash_is_rejected) ... ok\ntest_corrupt_persistent_freeze_is_not_silently_replaced (test_gpu_logic.CheckpointAndFreezeTests.test_corrupt_persistent_freeze_is_not_silently_replaced) ... ok\ntest_corrupt_result_is_detected_even_when_json_remains_valid (test_gpu_logic.CheckpointAndFreezeTests.test_corrupt_result_is_detected_even_when_json_remains_valid) ... ok\ntest_fresh_runtime_restores_identical_freeze_but_never_overwrites_different_protocol (test_gpu_logic.CheckpointAndFreezeTests.test_fresh_runtime_restores_identical_freeze_but_never_overwrites_different_protocol) ... ok\ntest_frozen_runtime_rejects_changed_prompts_mode_adapter_and_config (test_gpu_logic.CheckpointAndFreezeTests.test_frozen_runtime_rejects_changed_prompts_mode_adapter_and_config) ... ok\ntest_incompatible_training_manifest_is_checked_before_model_download (test_gpu_logic.CheckpointAndFreezeTests.test_incompatible_training_manifest_is_checked_before_model_download) ... ok\ntest_mas_has_three_calls_and_only_public_source_fields (test_gpu_logic.CheckpointAndFreezeTests.test_mas_has_three_calls_and_only_public_source_fields) ... ok\ntest_no_gpu_fails_before_data_reads_output_or_downloads (test_gpu_logic.CheckpointAndFreezeTests.test_no_gpu_fails_before_data_reads_output_or_downloads) ... ok\ntest_partial_jsonl_is_retained_and_not_silently_retried (test_gpu_logic.CheckpointAndFreezeTests.test_partial_jsonl_is_retained_and_not_silently_retried) ... ok\ntest_resume_is_bound_to_ordered_sources_and_protocol (test_gpu_logic.CheckpointAndFreezeTests.test_resume_is_bound_to_ordered_sources_and_protocol) ... ok\ntest_training_snapshot_blocks_changed_prompt_before_validation_cache (test_gpu_logic.CheckpointAndFreezeTests.test_training_snapshot_blocks_changed_prompt_before_validation_cache) ... ok\ntest_disagreement_is_flagged_when_final_keeps_initial (test_gpu_logic.ParserAndGateTests.test_disagreement_is_flagged_when_final_keeps_initial) ... ok\ntest_revision_without_grounded_review_is_blocked (test_gpu_logic.ParserAndGateTests.test_revision_without_grounded_review_is_blocked) ... ok\ntest_source_quote_keeps_negation_and_requires_unique_exact_occurrence (test_gpu_logic.ParserAndGateTests.test_source_quote_keeps_negation_and_requires_unique_exact_occurrence) ... ok\ntest_strict_json_and_failures_are_not_repaired (test_gpu_logic.ParserAndGateTests.test_strict_json_and_failures_are_not_repaired) ... ok\ntest_supported_revision_and_invalid_initial_are_distinguished (test_gpu_logic.ParserAndGateTests.test_supported_revision_and_invalid_initial_are_distinguished) ... ok\ntest_none_accepted_has_no_fabricated_accuracy_or_f1 (test_gpu_logic.SelectiveScoringTests.test_none_accepted_has_no_fabricated_accuracy_or_f1) ... ok\ntest_shared_mask_aligns_ids_and_denominators_for_both_methods (test_gpu_logic.SelectiveScoringTests.test_shared_mask_aligns_ids_and_denominators_for_both_methods) ... ok\ntest_assistant_only_mask_includes_last_answer_token_and_eos (test_gpu_logic.TokenMaskTests.test_assistant_only_mask_includes_last_answer_token_and_eos) ... ok\ntest_long_source_is_rejected_without_silent_target_truncation (test_gpu_logic.TokenMaskTests.test_long_source_is_rejected_without_silent_target_truncation) ... ok\ntest_padding_cannot_train_on_pad_tokens_or_erase_answer_eos (test_gpu_logic.TokenMaskTests.test_padding_cannot_train_on_pad_tokens_or_erase_answer_eos) ... ok\ntest_manifest_path_escape_is_rejected (test_research.DataBoundaryTests.test_manifest_path_escape_is_rejected) ... ok\ntest_preserved_source_hashes_and_default_group_split (test_research.DataBoundaryTests.test_preserved_source_hashes_and_default_group_split) ... ok\ntest_public_input_does_not_depend_on_gold_or_source_identity (test_research.DataBoundaryTests.test_public_input_does_not_depend_on_gold_or_source_identity) ... ok\ntest_source_overlap_is_rejected_even_with_new_id (test_research.DataBoundaryTests.test_source_overlap_is_rejected_even_with_new_id) ... ok\ntest_test_cannot_be_supplied_as_training_development (test_research.DataBoundaryTests.test_test_cannot_be_supplied_as_training_development) ... ok\ntest_transform_does_not_learn_held_out_vocabulary (test_research.DataBoundaryTests.test_transform_does_not_learn_held_out_vocabulary) ... ok\ntest_invalid_metrics_inputs_are_rejected (test_research.MetricTests.test_invalid_metrics_inputs_are_rejected) ... ok\ntest_invalid_outputs_remain_errors_in_the_denominator (test_research.MetricTests.test_invalid_outputs_remain_errors_in_the_denominator) ... ok\ntest_majority_can_be_accurate_and_miss_the_minority (test_research.MetricTests.test_majority_can_be_accurate_and_miss_the_minority) ... ok\ntest_paired_bootstrap_identical_systems_have_zero_difference (test_research.MetricTests.test_paired_bootstrap_identical_systems_have_zero_difference) ... ok\ntest_frozen_training_ids_and_loaded_model_reproduce_all_predictions (test_research.ReferenceArtifactTests.test_frozen_training_ids_and_loaded_model_reproduce_all_predictions) ... ok\ntest_measured_figure_sources_and_files_match_their_hashes (test_research.ReferenceArtifactTests.test_measured_figure_sources_and_files_match_their_hashes) ... ok\ntest_reference_predictions_are_complete_and_metrics_recalculate (test_research.ReferenceArtifactTests.test_reference_predictions_are_complete_and_metrics_recalculate) ... ok\n\n----------------------------------------------------------------------\nRan 35 tests in 0.297s\n\nOK\n"
+    },
+    "reference_complete_manifest_artifacts": 26,
+    "frozen_reference_source_code_matches": true,
+    "gpu_status": {
+      "project": "MASHeart",
+      "execution_status": "not_run",
+      "reason": "The packaging and validation host has PyTorch CPU and no CUDA device.",
+      "available_pipeline": "Qwen3-4B-Instruct-2507 NF4 QLoRA training, validation selection, and three-stage MAS evaluation",
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "gpu_training_completed": false,
+      "gpu_inference_completed": false,
+      "performance_metrics": null,
+      "test_scope": "CPU-testable parser, evidence gate, assistant-only loss masking, frozen protocol, and checkpoint logic; no GPU benchmark is claimed."
+    },
+    "portable_document_links_valid": true,
+    "notebooks": [
+      {
+        "path": "notebooks/01_Data_Exploration.ipynb",
+        "cells": 20,
+        "code_cells": 9,
+        "schema_and_syntax": "passed",
+        "execution": "passed_in_clean_cpu_kernel",
+        "cell_errors": 0,
+        "bootstrap": "embedded assets; no parent repository import",
+        "note": "Optional GPU branches skipped; GPU metrics were not generated."
+      },
+      {
+        "path": "notebooks/MASHeart_Step_by_Step.ipynb",
+        "cells": 53,
+        "code_cells": 25,
+        "schema_and_syntax": "passed",
+        "execution": "passed_in_clean_cpu_kernel",
+        "cell_errors": 0,
+        "bootstrap": "embedded assets; no parent repository import",
+        "note": "Optional GPU branches skipped; GPU metrics were not generated."
+      }
+    ],
+    "elapsed_seconds": 22.202225400018506
+  }
+}

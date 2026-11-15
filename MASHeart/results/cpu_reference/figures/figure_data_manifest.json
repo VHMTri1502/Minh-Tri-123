@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "renderer": "matplotlib",
+  "matplotlib_version": "3.9.2",
+  "style": {
+    "dpi": 300,
+    "font_family": "DejaVu Sans",
+    "font_size": 10,
+    "formats": [
+      "png",
+      "svg"
+    ],
+    "colors": {
+      "NO": "#c56c39",
+      "YS": "#287da8",
+      "majority": "#8b929a",
+      "tfidf_logreg": "#287da8"
+    }
+  },
+  "figures": [
+    {
+      "id": "01_development_label_balance",
+      "description": "Official development counts before creating the internal group split.",
+      "data": {
+        "path": "../tables/01_development_label_balance_data.csv",
+        "sha256": "e3843dfe1c2238bac5df77a8eca2b4298dcb5e5b5a32e478a5064de839e108d0",
+        "rows": 2
+      },
+      "files": [
+        {
+          "path": "01_development_label_balance.png",
+          "sha256": "769532776fbc3695ef8be79481b20c513022194fd4f9254b105e7b1730d4b304",
+          "bytes": 54010
+        },
+        {
+          "path": "01_development_label_balance.svg",
+          "sha256": "ee854ef8d277eb0c7197fd933fdb52b04ca44c88cda1ceccd1f9a5fb8e9e5185",
+          "bytes": 21539
+        }
+      ]
+    },
+    {
+      "id": "02_development_statement_lengths",
+      "description": "Source-preserving whitespace word counts; these are not LLM subword-token counts.",
+      "data": {
+        "path": "../tables/02_development_statement_lengths_data.csv",
+        "sha256": "144791b7fa93dd206cd14103664f4e466c1c762978c8b76f7fea285266086eb5",
+        "rows": 125
+      },
+      "files": [
+        {
+          "path": "02_development_statement_lengths.png",
+          "sha256": "37f83c8f8db5f71640cc47ed1205e46fe9fe8e55f4932f46f8788f92dafdec37",
+          "bytes": 68516
+        },
+        {
+          "path": "02_development_statement_lengths.svg",
+          "sha256": "ee23271ea24d9eeebb98426015bde4526ea7a1898efb09acdb20e27555af3eba",
+          "bytes": 32171
+        }
+      ]
+    },
+    {
+      "id": "03_source_group_split",
+      "description": "Training and validation are development subsets; official test membership is preserved.",
+      "data": {
+        "path": "../tables/03_source_group_split_data.csv",
+        "sha256": "e5a55c72285c39a7caf5161735ff45255f68c831119c4a0d24a937e83dcdb8fd",
+        "rows": 3
+      },
+      "files": [
+        {
+          "path": "03_source_group_split.png",
+          "sha256": "122caac87c49c5085de52df70c469b2908c6e5c5ffdbb1c3560dd61c71bdfa59",
+          "bytes": 110686
+        },
+        {
+          "path": "03_source_group_split.svg",
+          "sha256": "5ae8db4e8922c6662848fc584feb609a1d4a27f9dd9af10ae5f09c6943810621",
+          "bytes": 36008
+        }
+      ]
+    },
+    {
+      "id": "04_test_confusion_matrix",
+      "description": "Rows are gold and columns are predictions; invalid outputs are retained when present.",
+      "data": {
+        "path": "../tables/04_test_confusion_matrix_data.csv",
+        "sha256": "c7d73c5cf3103c944da62b9ae5dd7fb2d8de9e24640dae49cbcdfff37dc39f79",
+        "rows": 4
+      },
+      "files": [
+        {
+          "path": "04_test_confusion_matrix.png",
+          "sha256": "785df30019747a42d3e9c5bc5573bccf7536c97bb66aecbe5bb9a00b64ffd952",
+          "bytes": 44122
+        },
+        {
+          "path": "04_test_confusion_matrix.svg",
+          "sha256": "e56f21b69eac4297ac8d19c1ebb6dc54e55ba763b536b1dc19c33e0b7b011314",
+          "bytes": 27868
+        }
+      ]
+    },
+    {
+      "id": "05_test_metric_comparison",
+      "description": "Observed accuracy and fixed-two-class macro-F1 on the complete official test split.",
+      "data": {
+        "path": "../tables/05_test_metric_comparison_data.csv",
+        "sha256": "7936e99a082a30831bb43cdeb071bfc98e62a9a4953c37b96a7750595549c000",
+        "rows": 2
+      },
+      "files": [
+        {
+          "path": "05_test_metric_comparison.png",
+          "sha256": "9de9efffac4fa66c5fbd10c95beb9750d830be85e29d2163f3a17b5da9f4fbd9",
+          "bytes": 85024
+        },
+        {
+          "path": "05_test_metric_comparison.svg",
+          "sha256": "bddf74c46a4ebd779f39a96bfbf954b09ecea2de77ac901a05f9c97cc75557d5",
+          "bytes": 32245
+        }
+      ]
+    },
+    {
+      "id": "06_test_per_class_recall",
+      "description": "Per-class recall uses each class's full gold support, including failed predictions.",
+      "data": {
+        "path": "../tables/06_test_per_class_recall_data.csv",
+        "sha256": "d78ea5ff33c5a3602426cbb10bbb8aeef0692c22c26648e2f235a7291e830b8b",
+        "rows": 4
+      },
+      "files": [
+        {
+          "path": "06_test_per_class_recall.png",
+          "sha256": "cea4c451d5319cd042eefd2c6904c4831b569a5ede0d42e00d6165c6f40bd166",
+          "bytes": 86108
+        },
+        {
+          "path": "06_test_per_class_recall.svg",
+          "sha256": "1147b4711e28ed2d98195b1c90b5ee7a92bed049c4732dbd3caa7136477d7b66",
+          "bytes": 33153
+        }
+      ]
+    },
+    {
+      "id": "07_test_group_accuracy",
+      "description": "Groups have different sample counts; the overall score is not the unweighted mean of these bars.",
+      "data": {
+        "path": "../tables/07_test_group_accuracy_data.csv",
+        "sha256": "32bea09bbf89e2c7271f257d4095e9f4b716f9573947ec5095c5c1bb5d87d07f",
+        "rows": 20
+      },
+      "files": [
+        {
+          "path": "07_test_group_accuracy.png",
+          "sha256": "756555146b179a5825a4cb8fddeec11ca10a9b3e91e078b93d8f76f79bd8dfc6",
+          "bytes": 154627
+        },
+        {
+          "path": "07_test_group_accuracy.svg",
+          "sha256": "e220b2accda376461d03095aa7a3335e576f4231d1c2b8ed71ddef0e93fc9022",
+          "bytes": 43283
+        }
+      ]
+    },
+    {
+      "id": "08_paired_cluster_bootstrap",
+      "description": "Whole groups are sampled with replacement; both systems receive the same sampled rows.",
+      "data": {
+        "path": "../tables/08_paired_cluster_bootstrap_data.csv",
+        "sha256": "35d9ab0a21e343738a4ebdf036545661538ca1a67c455ef7bdd31891be717284",
+        "rows": 500
+      },
+      "files": [
+        {
+          "path": "08_paired_cluster_bootstrap.png",
+          "sha256": "9619750addd6a3c2404854b8daffdaa358cf60d50ed208df36f235501023198c",
+          "bytes": 89749
+        },
+        {
+          "path": "08_paired_cluster_bootstrap.svg",
+          "sha256": "eb76d8daa475aab7da2b8dc2c3a27764c02360c9dac360485f616b2dab934140",
+          "bytes": 40195
+        }
+      ]
+    }
+  ]
+}
